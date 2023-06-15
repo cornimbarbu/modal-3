@@ -72,7 +72,7 @@ li {
   margin: 0 auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .is-hidden {
@@ -90,13 +90,16 @@ li {
   border: 1px solid #e18298;
   border-radius: 50%;
   cursor: pointer;
-  padding: 0 0 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .close-btn svg {
   fill: #ffffff;
   width: 25px;
   height: 25px;
+  padding-right: 2px;
+  padding-top: 1px;
 }
 .close-btn:hover {
   background: #ffffff;
@@ -116,12 +119,16 @@ li {
   border: 1px solid #e17992;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .close-btn2 svg {
   fill: #d41443;
   width: 25px;
   height: 25px;
+  padding-right: 2px;
+  padding-top: 1px;
 }
 .close-btn2:hover {
   background: #d41443;
