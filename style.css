@@ -9,7 +9,7 @@ li {
   height: 100px;
 }
 
-.container {
+.container--header {
   margin: 0 auto;
   width: 1200px;
 }
@@ -19,7 +19,7 @@ li {
   height: 700px;
 }
 
-.nu-vrea {
+.global-footer {
   background: #ffb8ca;
   height: 100px;
 }
@@ -51,7 +51,7 @@ li {
   border-radius: 10px;
 }
 
-.modal2 {
+.modal-2 {
   position: relative;
   padding: 40px;
   background: #ffb8ca;
@@ -63,7 +63,7 @@ li {
   border-radius: 10px;
 }
 
-.modal3 {
+.modal-3 {
   position: relative;
   padding: 40px;
   background: #ffb8ca;
@@ -80,7 +80,7 @@ li {
   visibility: hidden;
 }
 
-.close-btn {
+.modal__close-btn {
   position: absolute;
   background: #e17992;
   right: 15px;
@@ -94,22 +94,22 @@ li {
   align-items: center;
 }
 
-.close-btn svg {
+.modal__close-btn .icon {
   fill: #ffffff;
   width: 25px;
   height: 25px;
   padding-right: 2px;
   padding-top: 1px;
 }
-.close-btn:hover {
+.modal__close-btn:hover {
   background: #ffffff;
 }
 
-.close-btn svg:hover {
+.modal__close-btn .icon:hover {
   fill: #d41443;
 }
 
-.close-btn2 {
+.modal-2-3__close-btn {
   position: absolute;
   background: #ffffff;
   right: 15px;
@@ -123,50 +123,50 @@ li {
   align-items: center;
 }
 
-.close-btn2 svg {
+.modal-2-3__close-btn .icon {
   fill: #d41443;
   width: 25px;
   height: 25px;
   padding-right: 2px;
   padding-top: 1px;
 }
-.close-btn2:hover {
+.modal-2-3__close-btn:hover {
   background: #d41443;
 }
 
-.close-btn2 svg:hover {
+.modal-2-3__close-btn .icon:hover {
   fill: #ffffff;
 }
 
-.products {
+.modal__products-list {
   display: flex;
   padding-left: 0;
   justify-content: center;
   align-items: center;
 }
 
-.products-item {
+.modal__products-list__items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-group {
+.modal__forms--form-group {
   position: relative;
   display: flex;
   gap: 4px;
   flex-direction: column;
 }
 
-.form-group3 {
+.modal__forms--form-group-3 {
   position: relative;
   display: flex;
   gap: 4px;
   flex-direction: column;
 }
 
-.form-heading {
+.modal--heading {
   font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: 400;
@@ -182,7 +182,7 @@ li {
   margin-bottom: 15px;
 }
 
-.form-heading2 {
+.modal__form-heading-2-3 {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -196,7 +196,7 @@ li {
   margin-bottom: 15px;
 }
 
-.form-sub-heading {
+.modal--sub-heading {
   font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: 400;
@@ -208,11 +208,11 @@ li {
   text-transform: uppercase;
 }
 
-.form-group + .form-group {
+.modal__forms--form-group + .modal__forms--form-group {
   margin-top: 10px;
 }
 
-.form-group > :nth-child(1) {
+.modal__forms--form-group__selctor {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -222,7 +222,7 @@ li {
   margin-left: 30px;
 }
 
-.form-group > :nth-child(2) {
+.modal__forms--form-group__input {
   padding-left: 40px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -240,15 +240,15 @@ li {
   margin-right: 30px;
 }
 
-.form-group > :nth-child(2)::placeholder {
+.modal__forms--form-group__input::placeholder {
   color: #d41443;
 }
 
-.form-group3 + .form-group3 {
+.modal__forms--form-group-3 + .modal__forms--form-group-3 {
   margin-top: 10px;
 }
 
-.form-group3 > :nth-child(1) {
+.modal__forms--form-group-3__selctor {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -258,7 +258,7 @@ li {
   margin-left: 30px;
 }
 
-.form-group3 > :nth-child(2) {
+.modal__forms--form-group-3__input {
   padding-left: 40px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -276,15 +276,15 @@ li {
   margin-right: 30px;
 }
 
-.form-group3 > :nth-child(2)::placeholder {
+.modal__forms--form-group-3__input::placeholder {
   color: #d41443;
 }
 
-.select-products {
+.modal__products {
   margin-top: -25px;
 }
 
-.select-qty > :nth-child(1) {
+.modal__products-list__items--qty--input {
   width: 100px;
   margin-top: 10px;
   padding-left: 60px;
@@ -303,17 +303,17 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.select-qty > :nth-child(1)::placeholder {
+.modal__products-list__items--qty--input::placeholder {
   color: #d41443;
 }
 
-.select-qty input:focus-within {
+.modal__products-list__items--qty--input:focus-within {
   border: 2px solid #d41443;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.form-group .input:focus-within {
+.modal__forms--form-group__input:focus-within {
   border: 2px solid #d41443;
   border-radius: 4px;
   cursor: pointer;
@@ -321,7 +321,7 @@ li {
   outline: none;
 }
 
-.form-group3 .input:focus-within {
+.modal__forms--form-group-3__input:focus-within {
   border: 3px solid #d41443;
   border-radius: 8px;
   cursor: pointer;
@@ -329,11 +329,11 @@ li {
   outline: none;
 }
 
-.input:focus ~ .form-svg {
+.input:focus ~ .icon--adress {
   fill: #d41443;
 }
 
-.form .form-svg {
+.modal__forms .icon--adress {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -342,13 +342,13 @@ li {
   left: 42px;
 }
 
-.form-controls {
+.modal__form-controls {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.btn-submit {
+.modal__form-controls--btn-submit-1 {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
@@ -371,8 +371,8 @@ li {
   color: #d41443;
 }
 
-.btn-submit:hover,
-.btn-submit:focus {
+.modal__form-controls--btn-submit-1:hover,
+.modal__form-controls--btn-submit-1:focus {
   background: #ffb8ca;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
@@ -380,7 +380,7 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-submit2 {
+.modal__form-controls--btn-submit {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
@@ -403,8 +403,8 @@ li {
   color: #d41443;
 }
 
-.btn-submit2:hover,
-.btn-submit2:focus {
+.modal__form-controls--btn-submit:hover,
+.modal__form-controls--btn-submit:focus {
   background: #d41443;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
@@ -413,21 +413,21 @@ li {
   color: #ffffff;
 }
 
-.google-map {
+.modal__forms--google-map {
   padding-bottom: 50%;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.google-map iframe {
+.modal__forms--google-map--position {
   height: 100%;
   width: 100%;
   position: absolute;
   border: 3px solid #d41443;
 }
 
-.location {
+.modal__forms--location {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -438,7 +438,7 @@ li {
   margin-top: 10px;
 }
 
-.form-textarea {
+.modal__form-textarea {
   position: relative;
   display: flex;
   gap: 4px;
@@ -446,7 +446,7 @@ li {
   margin-top: 10px;
 }
 
-.form-textarea > :nth-child(1) {
+.modal__form-textarea--selector {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -456,7 +456,7 @@ li {
   margin-left: 30px;
 }
 
-.form-textarea > :nth-child(2) {
+.modal__form-textarea--input {
   padding: 12px 16px;
   border: 2px solid #d41443;
   border-radius: 8px;
@@ -472,11 +472,11 @@ li {
   resize: none;
 }
 
-.form-textarea > :nth-child(2)::placeholder {
+.modal__form-textarea--input::placeholder {
   color: #d41443;
 }
 
-.form-textarea textarea:focus-within {
+.modal__form-textarea--input:focus-within {
   border: 3px solid #d41443;
   border-radius: 8px;
   cursor: pointer;
