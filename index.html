@@ -18,9 +18,9 @@
           Aici este vorba de o sectiune din body
         </section>
 
-        <button>Open Modal 1</button>
-        <button>Open Modal 2</button>
-        <button data-modal-open>Open Modal 3</button>
+        <button data-modal-open="1">Open Modal 1</button>
+        <button data-modal-open="2">Open Modal 2</button>
+        <button data-modal-open="3">Open Modal 3</button>
       </div>
     </main>
     <footer class="nu-vrea">
@@ -31,9 +31,9 @@
 
     <!--Modal 1-->
 
-    <div class="backdrop is-hidden">
+    <div data-modal="1" class="backdrop is-hidden">
       <div class="modal">
-        <button class="close-btn">
+        <button data-modal-close="1" class="close-btn">
           <svg>
             <use href="./images/icons.svg#close-black"></use>
           </svg>
@@ -128,9 +128,9 @@
 
     <!--Modal 2-->
 
-    <div class="backdrop is-hidden">
+    <div data-modal="2" class="backdrop is-hidden">
       <div class="modal2">
-        <button class="close-btn2">
+        <button data-modal-close="2" class="close-btn2">
           <svg>
             <use href="./images/icons.svg#close-black"></use>
           </svg>
@@ -166,9 +166,9 @@
 
     <!--Modal 3-->
 
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal="3" class="backdrop is-hidden">
       <div class="modal3">
-        <button data-modal-close class="close-btn2">
+        <button data-modal-close="3" class="close-btn2">
           <svg>
             <use href="./images/icons.svg#close-black"></use>
           </svg>
