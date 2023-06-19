@@ -413,14 +413,14 @@ li {
   color: #ffffff;
 }
 
-.modal__forms--google-map {
+.modal__forms__google-map {
   padding-bottom: 50%;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.modal__forms--google-map--position {
+.modal__forms__google-map--position {
   height: 100%;
   width: 100%;
   position: absolute;
